@@ -52,6 +52,6 @@ def get_instrument_token(access_token, symbol_name="Nifty Bank", exchange="NSE_I
 
 if __name__ == "__main__":
     # Replace with your valid Upstox API access token
-    ACCESS_TOKEN = "YOUR_ACCESS_TOKEN"
+    ACCESS_TOKEN = eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiI2S0JBNTgiLCJqdGkiOiI2ODhmMmJlYjkyMmMxNjBhNWQ5ZDI4YzciLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6dHJ1ZSwiaWF0IjoxNzU0MjEzMzU1LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3NTQyNTg0MDB9.dw3dB4mm1T2QZ47PqBR3d2IuWFJ1beKL9pwFENQJB-E
     token = get_instrument_token(ACCESS_TOKEN, symbol_name="Nifty Bank", exchange="NSE_INDEX")
     print("Bank Nifty instrument token:", token)
