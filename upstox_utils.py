@@ -22,6 +22,8 @@ def fetch_ohlc(token, interval, days, access_token):
         df = pd.DataFrame(candles, columns=['datetime', 'open', 'high', 'low', 'close', 'volume'])
         df['datetime'] = pd.to_datetime(df['datetime'])
         df[['open', 'high', 'low', 'close']] = df[['open', 'high', 'low', 'close']].astype(float)
+        print("Status:", response.status_code)
+        print("Response:", response.text)
         return df
     except Exception as e:
         return pd.DataFrame()
