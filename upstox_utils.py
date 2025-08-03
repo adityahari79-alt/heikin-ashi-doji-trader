@@ -13,7 +13,7 @@ def fetch_ohlc(token, interval, days, access_token):
             'to': end_time.strftime('%Y-%m-%d')
         }
         response = requests.get(url, headers=headers, params=params, timeout=10)
-          import streamlit as st
+        import streamlit as st
         st.write("Status:", response.status_code)
         st.write("Response:", response.text)
         if response.status_code != 200:
